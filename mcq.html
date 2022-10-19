@@ -1,0 +1,434 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCQ</title>
+  <meta name="description" content="MCQ for online quetion">
+  <meta name="keyword" content="online quetion, mcq, mcq quetion">
+  <meta name="author" content="Mcq quetion">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  
+  <!-- Plugin -->
+  <link rel="stylesheet" href="assets/plugin/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/plugin/FS_5_pro/css/all.min.css">
+  <link rel="stylesheet" href="assets/plugin/aos/aos.css">
+
+</head>
+<body>
+ 
+<!-- Header -->
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg mq-navbar pt-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="assets/images/icon/logo.png" />
+      </a>
+      <button type="button" class="navbar-toggler mq-sidenav-btn" data-bs-toggle="offcanvas" data-bs-target="#sidenavbar" aria-controls="sidenavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start " id="sidenavbar" tabindex="-1" aria-labelledby="sidenavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Code And Tuts</h5>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mq-sidenav-menu">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-capitalize mq-black " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mcq-btn">
+              <a class="nav-link text-capitalize mq-black active " href="mcq.html">start MCQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize mq-black" href="about_us.html">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize mq-black" href="contact_us.html">contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Quetion filter -->
+  <section class="mq-quiz mt-100">
+    <div class="que-filter row">
+      <div class="col-md-8 mx-auto">
+        <h1 class="mq-head-sub-title text-center mb-3"><span class="border-0"> Choice your number of quetion & level</span></h1>
+        <div class="input-group mb-3">
+          <select name="quetion_n" id="" class="form-select" aria-label="Default select example">
+            <option value="">Quetion Range</option>
+            <option value="">10</option>
+            <option value="">25</option>
+            <option value="">50</option>
+            <option value="">100</option>
+          </select>
+          <select name="" id="que_level" class="form-select" aria-label="Default select example">
+            <option value="">Question Level</option>
+            <option value="">Beginner</option>
+            <option value="">Intermediate</option>
+            <option value="">Expert</option>
+          </select>
+          <span class="input-group-text"><button type="submit" class="btn btn-primary mq-btn">Start Quiz</button></span>
+        </div>
+      </div>
+    </div>
+    <!-- Quetion section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="mq-que-list">
+            <form name="" id="" action="" method="post">
+              <ul class="list-unstyled">
+                <!-- Quetion list -->
+                <li>
+                  <div class="mq-que-block">
+                    <div class="mq-que"><span>1.</span>What is HTML ?</div>
+                    <div class="mq-que-option mq-false">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que1" id="">
+                          <label class="form-check-label" for="que1">
+                            HTML lanugane
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class="fas fa-times"></i>    
+                        </div>
+                    </div>
+                    <div class="mq-que-option mq-true">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que1" id="">
+                          <label class="form-check-label" for="que1">
+                            Hypertext markup lanugane
+                            Hypertext markup lanugane
+                            Hypertext markup lanugane
+                            Hypertext markup lanugane
+                            Hypertext markup lanugane
+                            Hypertext markup lanugane
+                            Hypertext markup lanugane
+                            Hypertext markup lanugane
+                            Hypertext markup lanugane
+
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class="fas fa-check"></i>    
+                        </div>
+                    </div>  
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que1" id="">
+                        <label class="form-check-label" for="que1">
+                          hight text markup lanugane
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class="fas fa-check"></i>    
+                      </div>
+                    </div>
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que1" id="">
+                        <label class="form-check-label" for="que1">
+                          Hyper text machine lanugane
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class=""></i>    
+                      </div>
+                    </div>  
+                  </div>
+                </li>
+                <!-- que 2 -->
+                <li>
+                  <div class="mq-que-block ">
+                    <div class="mq-que"><span>2.</span>The correct sequence of HTML tags for starting a webpage is ?</div>
+                    <div class="mq-que-option">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que2" id="">
+                          <label class="form-check-label" for="que2">
+                            Head, Title, HTML, body 
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class=""></i>    
+                        </div>
+                    </div>
+                    <div class="mq-que-option">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que2" id="">
+                          <label class="form-check-label" for="que2">
+                            HTML, Body, Title, Head
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class=""></i>    
+                        </div>
+                    </div>  
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que2" id="">
+                        <label class="form-check-label" for="que2">
+                          HTML, Head, Title, Body
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class=""></i>    
+                      </div>
+                    </div>
+                    <div class="mq-que-option mq-true">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que2" id="">
+                        <label class="form-check-label" for="que2">
+                          HTML, Head, Title, Body
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class="fas fa-check"></i>    
+                      </div>
+                    </div>  
+                  </div>
+                </li>
+                <!-- Que-3 -->
+                <li>
+                  <div class="mq-que-block ">
+                    <div class="mq-que"><span>3.</span>Which of the following element is responsible for making the text bold in HTML?</div>
+                    <div class="mq-que-option">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que3" id="">
+                          <label class="form-check-label" for="que3">
+                            pre
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class=""></i>    
+                        </div>
+                    </div>
+                    <div class="mq-que-option">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que3" id="">
+                          <label class="form-check-label" for="que3">
+                            a
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class=""></i>    
+                        </div>
+                    </div>  
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que3" id="">
+                        <label class="form-check-label" for="que3">
+                          b
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class=""></i>    
+                      </div>
+                    </div>
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que3" id="">
+                        <label class="form-check-label" for="que3">
+                          br
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class=""></i>    
+                      </div>
+                    </div>  
+                  </div>
+                </li>
+                <!-- Que-4 -->
+                <li>
+                  <div class="mq-que-block ">
+                    <div class="mq-que"><span>4.</span>Which of the following tag is used for inserting the largest heading in HTML?</div>
+                    <div class="mq-que-option">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que4" id="">
+                          <label class="form-check-label" for="que4">
+                            h1
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class=""></i>    
+                        </div>
+                    </div>
+                    <div class="mq-que-option">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que4" id="">
+                          <label class="form-check-label" for="que4">
+                            h2
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class=""></i>    
+                        </div>
+                    </div>  
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que4" id="">
+                        <label class="form-check-label" for="que4">
+                          h3
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class=""></i>    
+                      </div>
+                    </div>
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que4" id="">
+                        <label class="form-check-label" for="que4">
+                          h4
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class=""></i>    
+                      </div>
+                    </div>  
+                  </div>
+                </li>
+                <!-- Que-5 -->
+                <li>
+                  <div class="mq-que-block ">
+                    <div class="mq-que"><span>5.</span>Which of the following tag is used for inserting the largest heading in HTML?</div>
+                    <div class="mq-que-option">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que5" id="">
+                          <label class="form-check-label" for="que5">
+                            h1
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class=""></i>    
+                        </div>
+                    </div>
+                    <div class="mq-que-option">
+                        <div class="mq-option form-check">
+                          <input class="form-check-input" type="radio" name="que5" id="">
+                          <label class="form-check-label" for="que5">
+                            h2
+                          </label>
+                        </div>
+                        <div class="mq-status">
+                          <i class=""></i>    
+                        </div>
+                    </div>  
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que5" id="">
+                        <label class="form-check-label" for="que5">
+                          h3
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class=""></i>    
+                      </div>
+                    </div>
+                    <div class="mq-que-option">
+                      <div class="mq-option form-check">
+                        <input class="form-check-input" type="radio" name="que5" id="">
+                        <label class="form-check-label" for="que5">
+                          h4
+                        </label>
+                      </div>
+                      <div class="mq-status">
+                        <i class=""></i>    
+                      </div>
+                    </div>  
+                  </div>
+                </li>
+                
+              </ul>
+            </form>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-3">
+          <div class="mq-google-adv-vertical">
+            <div class="mx-auto sticky-top text-center">
+              <img class="img-fluid" src="assets/images/banner/googlebanner-vertical.jpg" alt="google-adv"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  
+  <!-- Googel Adv -->
+  <section class="mq-googel-adv m-5 mt-100">
+    <div class="container">
+      <div class="mx-auto text-center">
+        <img class="img-fluid" src="assets/images/banner/googlebanner.jpg" alt="google-adv"/>
+      </div>
+    </div>
+  </section> 
+
+</main>
+
+<!-- Footer -->
+<footer class="p-3">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <img class="footer-logo" src="assets/images/icon/logo.png" alt="footer-logo">
+    </div>
+    <div class="col-md-12 ">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a class="" href="about_us.html" title="about us">about us</a>
+        </li>
+        <li class="list-inline-item">
+          <a class="" href="contact_us.html" title="about us">contact us</a>
+        </li>
+        <li class="list-inline-item">
+          <a class="" href="privacy_policy.html" title="about us">privacy policy</a>
+        </li>
+      </ul>
+    </div>    
+  </div>
+</footer>  
+<div class="copy-right">
+  <div class="row">
+    <div class="col-md-12 text-left text-white">copyright@2022 mcqonline</div>
+  </div>
+</div>
+</body>
+<!-- Javascript -->
+<script src="assets/js/jquery3.6.1.min.js"></script>
+<script src="assets/js/typing.js"></script>
+<!-- <script src="assets/js/banner.js"></script> -->
+<script src="assets/plugin/aos/aos.js"></script>
+<!-- <script src="assets/plugin/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<script src="assets/plugin/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/plugin/bootstrap/js/src/popover.js"></script>
+<script src="assets/plugin/FS_5_pro/js/all.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  var typing=new Typed(".text", {
+      strings: ["","Java","C lanugane","C++","PHP","Javascript","SQL","DBMS","Python","SQL Server"],
+      typeSpeed: 100,
+      backSpeed: 40,
+      loop: true,
+  });
+
+  AOS.init({
+    duration: 1200,
+  })
+</script>
+</html>
