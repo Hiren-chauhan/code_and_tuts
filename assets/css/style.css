@@ -40,14 +40,7 @@ header .box-shadow {
   background-color: rgba(255, 255, 255, 0.7803921569) !important;
 }
 header .container, header .container-fluid, header .container-lg, header .container-md, header .container-sm, header .container-xl, header .container-xxl {
-  align-items: flex-start !important;
-}
-header .mq-navbar {
-  height: 70px;
-}
-header .mq-navbar .navbar-brand {
-  position: absolute;
-  top: 0px;
+  align-items: flex-end;
 }
 header .mq-navbar .logo {
   width: 160px;
@@ -56,12 +49,6 @@ header .mq-navbar .logo {
 header .mq-navbar .mq-sidenav-btn {
   color: #343434;
   background-color: transparent;
-  position: fixed;
-  right: 10px;
-  top: 10px;
-}
-header .mq-navbar .mq-sidenav-menu .navbar-nav {
-  margin-bottom: 20px;
 }
 header .mq-navbar .mq-sidenav-menu .mcq-btn {
   color: #fff;
@@ -369,5 +356,9 @@ header .mq-navbar .mq-sidenav-menu li a, header .mq-navbar .offcanvas-header {
   }
   header .mq-navbar .navbar-toggler:focus {
     box-shadow: none;
+  }
+  .navbar-nav .nav-link {
+    padding-left: 7px;
+    padding-right: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
