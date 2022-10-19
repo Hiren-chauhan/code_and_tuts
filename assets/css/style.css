@@ -42,6 +42,13 @@ header .box-shadow {
 header .container, header .container-fluid, header .container-lg, header .container-md, header .container-sm, header .container-xl, header .container-xxl {
   align-items: flex-start !important;
 }
+header .mq-navbar {
+  height: 70px;
+}
+header .mq-navbar .navbar-brand {
+  position: absolute;
+  top: 0px;
+}
 header .mq-navbar .logo {
   width: 160px;
   height: 55px;
@@ -49,6 +56,12 @@ header .mq-navbar .logo {
 header .mq-navbar .mq-sidenav-btn {
   color: #343434;
   background-color: transparent;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+header .mq-navbar .mq-sidenav-menu .navbar-nav {
+  margin-bottom: 20px;
 }
 header .mq-navbar .mq-sidenav-menu .mcq-btn {
   color: #fff;
@@ -104,10 +117,18 @@ header .mq-navbar .mq-sidenav-menu li a:hover {
 }
 
 .mq-cate-card {
+  text-decoration: none;
+  color: #343434;
+}
+.mq-cate-card:hover .card {
+  background: rgb(234, 135, 36);
+  color: #fff;
+}
+.mq-cate-card .card {
   margin: 10px 0px;
 }
 .mq-cate-card:hover {
-  background: #ea8724;
+  background: rgb(234, 135, 36);
   color: #fff;
 }
 .mq-cate-card img {
@@ -122,6 +143,7 @@ header .mq-navbar .mq-sidenav-menu li a:hover {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 15px;
 }
 
 .mq-que-count .mq-que-card {

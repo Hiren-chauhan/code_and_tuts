@@ -45,13 +45,22 @@ header
   .mq-black
     // 
   .mq-navbar
+    height: 70px
+    .navbar-brand
+      position: absolute
+      top: 0px
     .logo
       width: 160px
       height: 55px
     .mq-sidenav-btn
       color: $mq-text-primary
       background-color: transparent
+      position: fixed
+      right: 10px
+      top: 10px
     .mq-sidenav-menu
+      .navbar-nav
+        margin-bottom: 20px
       .mcq-btn
         color: $mq-white
         background: $mq-bg-primary
@@ -96,9 +105,15 @@ header
       color: #fffff !important
       background-color: $mq-bg-primary
 .mq-cate-card
-  margin: 10px 0px
+  text-decoration: none
+  color: $mq-text-primary
+  &:hover .card
+    background: $mq-bg-primary
+    color: #fff
+  .card
+    margin: 10px 0px
   &:hover
-    background: #ea8724
+    background: $mq-bg-primary
     color: #fff
   img
     padding: 5px
@@ -111,6 +126,7 @@ header
     text-align: center
     padding-left:10px 
     padding-right:10px
+    font-size:15px
 .mq-que-count
   .mq-que-card
     text-decoration: none
