@@ -79,6 +79,10 @@ header .mq-navbar .mq-sidenav-menu li a:hover {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.mq-banner .mq-banner-fix {
+  padding-top: 145px;
+  padding-bottom: 75px;
+}
 .mq-banner p {
   color: #fff;
 }
