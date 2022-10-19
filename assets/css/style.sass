@@ -1,0 +1,285 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800")
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,600i,700,800&subset=latin-ext')
+
+$assetPath : "/assets/images/background-img"
+
+$mq-text-primary:#343434
+$mq-text-hover:#111111
+$mq-bg-primary:rgb(234 135 36)
+$mq-border-light: #ced4da
+$mq-bg-light: rgba(245, 245, 245, 3.3)
+$mq-white: #fff
+
+@mixin text($color, $bg-color, $font-size)
+  background: $bg-color
+  color:$color
+  font-size: $font-size
+  font-weight: 700
+
+// Comman Class
+html, body
+  overflow-x: hidden
+.mq-head-title
+  text-align: center
+  span
+    @include text($mq-text-primary, transparent, 26px)
+    text-align: center
+.mq-head-sub-title
+  text-align: left
+  span
+    @include text($mq-text-primary, transparent, 22px)
+    border-bottom: 2.5px solid $mq-bg-primary 
+.mt-100
+  margin-top: 100px
+// Header
+header
+  .fixed-top 
+    background-color: rgba(0, 0, 0, 0.23) !important
+    transition: box-shadow 1200ms
+  .box-shadow
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25)
+    background-color: #ffffffc7 !important
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+    align-items: flex-start !important
+  .mq-black
+    // 
+  .mq-navbar
+    .logo
+      width: 160px
+      height: 55px
+    .mq-sidenav-btn
+      color: $mq-text-primary
+      background-color: transparent
+    .mq-sidenav-menu
+      .mcq-btn
+        color: $mq-white
+        background: $mq-bg-primary
+      .nav-item
+        transition: box-shadow 1200ms
+      .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link
+        color: $mq-white
+      .mq-black
+        // color:$mq-white
+      li
+        a
+          color:$mq-white 
+          font-weight: 500
+          border-bottom: 2.5px solid transparent
+          font-size: 16px
+          &:hover
+            color:$mq-white 
+            font-weight: 600 !important
+            border-bottom: 2.5px solid $mq-bg-primary
+.mq-banner
+  position: relative
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('#{$assetPath}/que-banner.jpg')
+  // background-image: url('#{$assetPath}/que-banner.webp')
+  background-attachment: fixed
+  background-position:  center center
+  background-repeat: no-repeat
+  p
+    color: $mq-white
+  .mq-bg-banner
+    position: absolute
+    right: 0px
+    top:0px
+    display: none
+  .text-typing
+    color: $mq-white
+    .text
+      color:#ff0000
+  .btn-outline-warning
+    border-color:$mq-bg-primary
+    color:$mq-bg-primary
+    &:hover
+      color: #fffff !important
+      background-color: $mq-bg-primary
+.mq-cate-card
+  margin: 10px 0px
+  &:hover
+    background: #ea8724
+    color: #fff
+  img
+    padding: 5px
+    width: 75px
+    height:75px
+    display: block
+    margin-left: auto
+    margin-right: auto
+  .card-title
+    text-align: center
+    padding-left:10px 
+    padding-right:10px
+.mq-que-count
+  .mq-que-card
+    text-decoration: none
+    color: $mq-text-primary
+    .card
+      border: none
+    
+    .card-title
+      font-size: 14px
+      border-bottom: 2.5px solid transparent
+      padding-bottom:2.5px
+
+      &::after
+        content: ''
+        display: block
+        width: 0
+        height: 2.5px
+        background: $mq-bg-primary
+        transition: width .3s
+        margin-top:2.5px
+
+      &:hover::after
+        width: 100%
+        margin-top:2.5px
+footer
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('#{$assetPath}/que-banner1.jpg')
+  background-attachment: fixed
+  background-position:  center bottom
+  text-align: center
+  .logo
+    width: 160px
+    height: 65px
+  ul
+    li
+      a
+        text-decoration: none
+        color: #fff !important
+        border-bottom: 2.5px solid transparent
+        font-size: 16px
+        padding-bottom: 3.5px
+        &:hover
+          border-bottom: 2.5px solid $mq-bg-primary
+          color: #ffffff !important
+.copy-right
+  background: $mq-bg-primary
+  text-align: center
+  font-size: 14px
+
+//Quetion filter
+.mq-quiz
+  .mq-google-adv-vertical
+    position: relative  
+.mq-que-list
+  ul
+    li:nth-child(odd)
+      background-color: rgb(245,245,245,0.4 )
+  padding: 5px
+  .mq-que-block
+    border: 1px solid $mq-border-light
+    padding: 7px
+    border-radius: 7px 
+    margin-bottom: 10px 
+    .mq-que
+      @include text($mq-text-primary , transparent , 18px )
+      font-weight: 600
+      margin-bottom: 5px
+      span
+        padding-right: 5px       
+    .mq-que-option
+      @include text($mq-text-primary , transparent , 16px )
+      font-weight: 500
+      display: flex
+      width: 100%
+      border: 1px solid $mq-border-light
+      padding: 7px
+      border-radius: 7px
+      margin-bottom: 7px !important
+      .mq-option
+        width: 95%
+        text-align: left
+      .mq-status
+        width: 5%
+        text-align: center
+      .form-check-input:checked 
+        background-color: $mq-bg-primary
+        border-color: $mq-bg-primary
+      .form-check-input:focus 
+        box-shadow: 0 0 0 0.25rem rgb(234 135 36 / 35%)
+    .mq-true
+      border: 1px solid rgb(5 245 68 / 0.4)
+      background-color: rgb(5 245 68 / 0.1)
+      color: rgb(5 245 68 / 0.7)
+      .form-check-input:checked 
+        background-color: rgb(5 245 68 / 0.5)
+        border-color: rgb(5 245 68 / 0.4)
+      .form-check-input:focus 
+        box-shadow: 0 0 0 0.25rem rgb(5 245 68 / 0.2) 
+    .mq-false
+      border: 1px solid rgb(245 5 5 / 0.4)
+      background-color: rgb(245 5 5 / 0.1)
+      color: rgb(245 5 5 / 0.5)
+      .form-check-input:checked 
+        background-color: rgb(245 5 5 / 0.5)
+        border-color: rgb(245 5 5 / 0.4)
+      .form-check-input:focus 
+        box-shadow: 0 0 0 0.25rem rgb(245 5 5 / 0.2)   
+//  About us
+.mq-page-details
+  .mq-paregraph
+    //
+  ul
+    margin-top: 10px
+    margin-bottom: 10px
+    span
+      font-size: 14px
+  .mq-sub-title
+    @include text($mq-text-primary ,transparent ,20px )
+    text-align: left
+    margin-top: 15px
+    margin-bottom: 15px
+    span
+      border-bottom: 2.5px solid $mq-bg-primary
+    
+.mq-popular-cat
+  margin-top: 10px
+  margin-bottom: 10px
+  padding:5px
+  background-color: $mq-bg-light
+  border-radius: 7px
+  a
+    @include text($mq-text-primary, transparent, 16px)
+    font-weight: 600
+    text-decoration: none
+    &:hover
+      color:$mq-bg-primary
+    &:hover.i
+      color:$mq-bg-primary
+    span
+      font-weight: 500
+      top:5px
+//contact us
+.contact-form
+  width: 75%
+  margin-left: auto
+  margin-right: auto
+  margin-top:20px
+  margin-bottom:20px
+  padding: 20px 10px
+  border: 1px solid $mq-border-light
+  border-radius: 7px 
+  .form-title
+    @include text($mq-text-primary ,transparent ,20px )
+    font-weight: 600
+    text-align: center
+    span
+      border-bottom: 2.5px solid $mq-bg-primary
+@media screen and (max-width: 992px)
+  header .container, header .container-fluid, header .container-lg, header .container-md, header .container-sm, header .container-xl, header .container-xxl
+    align-items: center !important
+  .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link,
+  header .mq-navbar .mq-sidenav-menu li a, header .mq-navbar .offcanvas-header
+    color: $mq-white
+  .navbar-toggler-icon, header .mq-navbar .offcanvas-header button
+    background-color: $mq-white
+  header .mq-navbar .mq-sidenav-btn 
+    color: white
+    border: 1px solid
+    padding: 5px
+  header .mq-navbar .offcanvas
+    background-color: rgb(0 0 0 / 66%)
+  header .mq-navbar .navbar-toggler:focus
+    box-shadow: none

@@ -1,0 +1,16 @@
+@media screen and (max-width: 992px) {
+  .mq-categories .col-md-2 {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .mq-categories .col-md-2 {
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 280px) {
+  .mq-categories .col-md-2 {
+    width: 50%;
+  }
+}

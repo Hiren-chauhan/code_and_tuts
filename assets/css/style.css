@@ -1,0 +1,351 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,600i,700,800&subset=latin-ext");
+html, body {
+  overflow-x: hidden;
+}
+
+.mq-head-title {
+  text-align: center;
+}
+.mq-head-title span {
+  background: transparent;
+  color: #343434;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mq-head-sub-title {
+  text-align: left;
+}
+.mq-head-sub-title span {
+  background: transparent;
+  color: #343434;
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: 2.5px solid rgb(234, 135, 36);
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+header .fixed-top {
+  background-color: rgba(0, 0, 0, 0.23) !important;
+  transition: box-shadow 1200ms;
+}
+header .box-shadow {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.7803921569) !important;
+}
+header .container, header .container-fluid, header .container-lg, header .container-md, header .container-sm, header .container-xl, header .container-xxl {
+  align-items: flex-start !important;
+}
+header .mq-navbar .logo {
+  width: 160px;
+  height: 55px;
+}
+header .mq-navbar .mq-sidenav-btn {
+  color: #343434;
+  background-color: transparent;
+}
+header .mq-navbar .mq-sidenav-menu .mcq-btn {
+  color: #fff;
+  background: rgb(234, 135, 36);
+}
+header .mq-navbar .mq-sidenav-menu .nav-item {
+  transition: box-shadow 1200ms;
+}
+header .mq-navbar .mq-sidenav-menu .navbar-nav .nav-link.active, header .mq-navbar .mq-sidenav-menu .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+header .mq-navbar .mq-sidenav-menu li a {
+  color: #fff;
+  font-weight: 500;
+  border-bottom: 2.5px solid transparent;
+  font-size: 16px;
+}
+header .mq-navbar .mq-sidenav-menu li a:hover {
+  color: #fff;
+  font-weight: 600 !important;
+  border-bottom: 2.5px solid rgb(234, 135, 36);
+}
+
+.mq-banner {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/background-img/que-banner.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.mq-banner p {
+  color: #fff;
+}
+.mq-banner .mq-bg-banner {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.mq-banner .text-typing {
+  color: #fff;
+}
+.mq-banner .text-typing .text {
+  color: #ff0000;
+}
+.mq-banner .btn-outline-warning {
+  border-color: rgb(234, 135, 36);
+  color: rgb(234, 135, 36);
+}
+.mq-banner .btn-outline-warning:hover {
+  color: #fffff !important;
+  background-color: rgb(234, 135, 36);
+}
+
+.mq-cate-card {
+  margin: 10px 0px;
+}
+.mq-cate-card:hover {
+  background: #ea8724;
+  color: #fff;
+}
+.mq-cate-card img {
+  padding: 5px;
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mq-cate-card .card-title {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mq-que-count .mq-que-card {
+  text-decoration: none;
+  color: #343434;
+}
+.mq-que-count .mq-que-card .card {
+  border: none;
+}
+.mq-que-count .mq-que-card .card-title {
+  font-size: 14px;
+  border-bottom: 2.5px solid transparent;
+  padding-bottom: 2.5px;
+}
+.mq-que-count .mq-que-card .card-title::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background: rgb(234, 135, 36);
+  transition: width 0.3s;
+  margin-top: 2.5px;
+}
+.mq-que-count .mq-que-card .card-title:hover::after {
+  width: 100%;
+  margin-top: 2.5px;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/background-img/que-banner1.jpg");
+  background-attachment: fixed;
+  background-position: center bottom;
+  text-align: center;
+}
+footer .logo {
+  width: 160px;
+  height: 65px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fff !important;
+  border-bottom: 2.5px solid transparent;
+  font-size: 16px;
+  padding-bottom: 3.5px;
+}
+footer ul li a:hover {
+  border-bottom: 2.5px solid rgb(234, 135, 36);
+  color: #ffffff !important;
+}
+
+.copy-right {
+  background: rgb(234, 135, 36);
+  text-align: center;
+  font-size: 14px;
+}
+
+.mq-quiz .mq-google-adv-vertical {
+  position: relative;
+}
+
+.mq-que-list {
+  padding: 5px;
+}
+.mq-que-list ul li:nth-child(odd) {
+  background-color: rgba(245, 245, 245, 0.4);
+}
+.mq-que-list .mq-que-block {
+  border: 1px solid #ced4da;
+  padding: 7px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.mq-que-list .mq-que-block .mq-que {
+  background: transparent;
+  color: #343434;
+  font-size: 18px;
+  font-weight: 700;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.mq-que-list .mq-que-block .mq-que span {
+  padding-right: 5px;
+}
+.mq-que-list .mq-que-block .mq-que-option {
+  background: transparent;
+  color: #343434;
+  font-size: 16px;
+  font-weight: 700;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  border: 1px solid #ced4da;
+  padding: 7px;
+  border-radius: 7px;
+  margin-bottom: 7px !important;
+}
+.mq-que-list .mq-que-block .mq-que-option .mq-option {
+  width: 95%;
+  text-align: left;
+}
+.mq-que-list .mq-que-block .mq-que-option .mq-status {
+  width: 5%;
+  text-align: center;
+}
+.mq-que-list .mq-que-block .mq-que-option .form-check-input:checked {
+  background-color: rgb(234, 135, 36);
+  border-color: rgb(234, 135, 36);
+}
+.mq-que-list .mq-que-block .mq-que-option .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(234, 135, 36, 0.35);
+}
+.mq-que-list .mq-que-block .mq-true {
+  border: 1px solid rgba(5, 245, 68, 0.4);
+  background-color: rgba(5, 245, 68, 0.1);
+  color: rgba(5, 245, 68, 0.7);
+}
+.mq-que-list .mq-que-block .mq-true .form-check-input:checked {
+  background-color: rgba(5, 245, 68, 0.5);
+  border-color: rgba(5, 245, 68, 0.4);
+}
+.mq-que-list .mq-que-block .mq-true .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(5, 245, 68, 0.2);
+}
+.mq-que-list .mq-que-block .mq-false {
+  border: 1px solid rgba(245, 5, 5, 0.4);
+  background-color: rgba(245, 5, 5, 0.1);
+  color: rgba(245, 5, 5, 0.5);
+}
+.mq-que-list .mq-que-block .mq-false .form-check-input:checked {
+  background-color: rgba(245, 5, 5, 0.5);
+  border-color: rgba(245, 5, 5, 0.4);
+}
+.mq-que-list .mq-que-block .mq-false .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(245, 5, 5, 0.2);
+}
+
+.mq-page-details ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mq-page-details ul span {
+  font-size: 14px;
+}
+.mq-page-details .mq-sub-title {
+  background: transparent;
+  color: #343434;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.mq-page-details .mq-sub-title span {
+  border-bottom: 2.5px solid rgb(234, 135, 36);
+}
+
+.mq-popular-cat {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 7px;
+}
+.mq-popular-cat a {
+  background: transparent;
+  color: #343434;
+  font-size: 16px;
+  font-weight: 700;
+  font-weight: 600;
+  text-decoration: none;
+}
+.mq-popular-cat a:hover {
+  color: rgb(234, 135, 36);
+}
+.mq-popular-cat a:hover.i {
+  color: rgb(234, 135, 36);
+}
+.mq-popular-cat a span {
+  font-weight: 500;
+  top: 5px;
+}
+
+.contact-form {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 7px;
+}
+.contact-form .form-title {
+  background: transparent;
+  color: #343434;
+  font-size: 20px;
+  font-weight: 700;
+  font-weight: 600;
+  text-align: center;
+}
+.contact-form .form-title span {
+  border-bottom: 2.5px solid rgb(234, 135, 36);
+}
+
+@media screen and (max-width: 992px) {
+  header .container, header .container-fluid, header .container-lg, header .container-md, header .container-sm, header .container-xl, header .container-xxl {
+    align-items: center !important;
+  }
+  .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link,
+header .mq-navbar .mq-sidenav-menu li a, header .mq-navbar .offcanvas-header {
+    color: #fff;
+  }
+  .navbar-toggler-icon, header .mq-navbar .offcanvas-header button {
+    background-color: #fff;
+  }
+  header .mq-navbar .mq-sidenav-btn {
+    color: white;
+    border: 1px solid;
+    padding: 5px;
+  }
+  header .mq-navbar .offcanvas {
+    background-color: rgba(0, 0, 0, 0.66);
+  }
+  header .mq-navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+}/*# sourceMappingURL=style.css.map */
